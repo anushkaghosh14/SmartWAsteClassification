@@ -52,7 +52,7 @@ def train_model():
 
     # Compute class weights
     class_weights = compute_class_weight(class_weight="balanced", classes=np.array([0, 1]), y=np.concatenate([
-        np.zeros(12634), np.ones(1467)  # Adjust according to your dataset
+        np.zeros(12634), np.ones(1467) 
     ]))
     class_weights_dict = {0: class_weights[0], 1: class_weights[1]}
 
